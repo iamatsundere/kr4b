@@ -1,2 +1,2 @@
 # kr4b
-kr4b aka. Cryptography for Absolutely Beginner
+kr4b aka. Cryptography for Absolute Beginner
