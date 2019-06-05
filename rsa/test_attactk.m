@@ -1,0 +1,19 @@
+clear;clc;
+p=29983;
+q=29989;
+n=p*q;
+fiN=(p-1)*(q-1);
+m=1;
+e1=11;
+gcd(e1,fiN)
+cm1=modexp(m,e1,n);
+e2=29;
+gcd(e2,fiN)
+cm2=modexp(m,e2,n);
+[x,y,d]=extended_euclid(e1,e2);
+if y<0
+    mx=mod(cm1^x*(1/cm2)^-y,n);
+else
+    mx=mod(cm1^x*(cm2)^y,n);
+end
+mx
